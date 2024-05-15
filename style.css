@@ -35,11 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services,.projects, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
+.projects .project-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -298,6 +299,53 @@ section .title::after{
     color: #fff;
 }
 .services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Projects section styling */
+
+.projects, .teams{
+    color:#fff;
+    background: #111;
+}
+.projects .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.projects .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i provide";
+}
+.projects .project-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .project-content .card:hover{
+    background: crimson;
+}
+.projects .project-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .project-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .project-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.projects .project-content .card:hover i{
+    color: #fff;
+}
+.projects .project-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
