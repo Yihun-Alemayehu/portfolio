@@ -334,6 +334,9 @@ section .title::after{
 .projects .project-content .card .box{
     transition: all 0.3s ease;
     width: 600px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
 }
 .projects .project-content .card:hover .box{
     transform: scale(1.05);
