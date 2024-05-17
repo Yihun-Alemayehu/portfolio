@@ -355,6 +355,13 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+.projects .project-content .card .see-text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: white;
+}
+
 /* skills section styling */
 
 .skills .title::after{
